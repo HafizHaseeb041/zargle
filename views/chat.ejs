@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-style-mode" content="1"> <!-- 0 == light, 1 == dark -->
+
+    <title>Chat</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.png">
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/plugins/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/plugins/feature.css">
+
+</head>
+
+<body>
+<main class="page-wrapper rbt-dashboard-page">
+    <div class="rbt-panel-wrapper">
+        <header class="rbt-dashboard-header rainbow-header header-default header-left-align rbt-fluid-header">
+            <div class="container-fluid position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-6 col-7">
+                        <div class="header-left d-flex">
+                            <div class="expand-btn-grp"></div>
+                            <div class="logo">
+                                <a href="/">
+                                    <img class="logo-light" src="/images/logo/logo.png" alt="ChatBot Logo">
+                                    <img class="logo-dark" src="/images/logo/logo-dark.png" alt="Corporate Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-6 col-5">
+                        <div class="header-right">
+                            <nav class="mainmenu-nav d-none d-lg-block text-center">
+                                <ul class="mainmenu">
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/dashboard">Dashboard</a></li>
+                                    <li><a href="/contact">Contact us</a></li>
+                                    <li><a href="/help">Help & FAQ</a></li>
+                                </ul>
+                            </nav>
+                            <div class="account-access rbt-user-wrapper right-align-dropdown">
+                                <div class="rbt-user ml--0">
+                                    <a class="admin-img" href="#"><img src="/images/team/team-01.jpg" alt="Admin"></a>
+                                </div>
+                                <div class="rbt-user-menu-list-wrapper">
+                                    <div class="inner">
+                                        <div class="rbt-admin-profile">
+                                            <div class="admin-thumbnail">
+                                                <img src="/images/team/team-01.jpg" alt="User Images">
+                                            </div>
+                                            <div class="admin-info">
+                                                <span class="name">Trent Adam</span>
+                                                <a class="rbt-btn-link color-primary" href="/profile-details">View
+                                                    Profile</a>
+                                            </div>
+                                        </div>
+                                        <ul class="user-list-wrapper user-nav">
+                                            <li>
+                                                <a href="/profile-details">
+                                                    <i class="feather-user"></i>
+                                                    <span>Profile Details</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <hr class="mt--10 mb--10">
+                                        <form class="user-list-wrapper" action="/logout" method="post" style="display: flex; align-items: center; color: white; margin-left: 5px">
+                                            <button type="submit" style="background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center; color: white">
+                                                <i class="feather-log-out" style="margin-right: 5px;"></i>
+                                                <span>Logout</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main content -->
+        <div class="rbt-main-content">
+            <div class="rbt-daynamic-page-content">
+                <!-- Dashboard Center Content -->
+                <div class="rbt-dashboard-content">
+                    <div class="content-page">
+                        <div class="chat-box-list pt--30" id="chatContainer">
+                            <!-- Text Generator -->
+                            <div class="chat-box user-speech bg-flashlight" style="margin-left: 250px;">
+                                <div class="inner">
+                                    <div class="chat-section">
+                                        <div class="author">
+                                            <img class="w-100" src="/images/team/team-01.jpg" alt="User 1">
+                                        </div>
+                                        <div class="chat-content">
+                                            <h6 class="title">You</h6>
+                                            <p>Hello! How are you today?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-box user-speech bg-flashlight" style="margin-right: 250px;">
+                                <div class="inner top-flashlight leftside light-xl">
+                                    <div class="chat-section">
+                                        <div class="author">
+                                            <img class="w-100" src="/images/team/team-04.png" alt="User 2">
+                                        </div>
+                                        <div class="chat-content">
+                                            <h6 class="title">Ahmed</h6>
+                                            <p>Hi! I'm doing well, thank you. How about you?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-box user-speech bg-flashlight" style="margin-left: 250px;">
+                                <div class="inner">
+                                    <div class="chat-section">
+                                        <div class="author">
+                                            <img class="w-100" src="/images/team/team-01.jpg" alt="User 1">
+                                        </div>
+                                        <div class="chat-content">
+                                            <h6 class="title">You</h6>
+                                            <p>I'm great, thanks for asking! What have you been up to?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-box user-speech bg-flashlight" style="margin-right: 250px;">
+                                <div class="inner top-flashlight leftside light-xl">
+                                    <div class="chat-section">
+                                        <div class="author">
+                                            <img class="w-100" src="/images/team/team-04.png" alt="User 2">
+                                        </div>
+                                        <div class="chat-content">
+                                            <h6 class="title">Ahmed</h6>
+                                            <p>Not much, just catching up on some work. What about you?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="rbt-static-bar">
+                        <form class="new-chat-form border-gradient">
+                            <textarea id="txtarea" rows="1" placeholder="Send a message..."></textarea>
+                            <div class="left-icons">
+                                <!-- End chat button -->
+                                <button class="form-icon end-chat-btn" title="End Chat" onclick="endChatAndRedirect()" style="background-color: rgba(255, 0, 0, 0.041); color:rgba(255, 255, 255, 0.678)">
+                                    <i class="feather-power"></i>
+                                </button>
+                            </div>
+                            <div class="right-icons">
+                                <div class="form-icon icon-plus">
+                                    <input type="file" class="input-file" name="myfile" multiple>
+                                    <i class="feather-plus-circle"></i>
+                                </div>
+                                <button class="form-icon icon-send" id="sendButton" onclick="sendMessage()">
+                                    <i class="feather-send"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+<!-- All Scripts  -->
+<!-- JS ============================================ -->
+<script>
+    function endChatAndRedirect() {
+        // End the chat here (you can add any functionality to end the chat)
+        alert("Ending chat...");
+
+        window.location.href = "/dashboard";
+    }
+</script>
+<script src="/js/vendor/jquery.min.js"></script>
+<script src="/js/vendor/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
